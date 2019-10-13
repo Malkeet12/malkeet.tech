@@ -1,0 +1,46 @@
+.article-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 60px;
+  border-bottom: 1px solid #f4f4f4;
+  background: #fff;
+  z-index: 11;
+
+  .nav-logo {
+    position: absolute;
+    top: -7px;
+    left: 0;
+    z-index: 3;
+    height: 72px;
+    padding: 4px 30px 4px 50px;
+  }
+
+  .nav {
+    flex-direction: row;
+    height: 100%;
+    margin: 0 210px 0 150px;
+    overflow: hidden;
+
+    .nav-item {
+      font-size: 1rem;
+      line-height: 1rem;
+      font-weight: 100;
+      letter-spacing: .08334rem;
+      text-transform: uppercase;
+      position: relative;
+      flex-shrink: 0;
+      margin: auto 15px;
+      list-style-type: none;
+    }
+  }
+
+  .nav-search {
+    right: 140px;
+    position: absolute;
+    top: 18px;
+    color: #007bff;
+    cursor: pointer;
+  }
+}
