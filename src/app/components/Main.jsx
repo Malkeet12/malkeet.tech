@@ -22,6 +22,7 @@ export const Main = () => (
           path='/problem/:id'
           render={({ match }) => <ConnectedProblemDetail match={match} />}
         ></Route>
+        <Route exact path={'*'} render={() => <ConnectedDashboard />} />
       </div>
     </Provider>
   </Router>
