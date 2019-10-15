@@ -7,8 +7,8 @@ export const Dashboard = ({ jsList }) => (
     {jsList.map((item, index) => (
       <div key={index}>
         <div className='wrapper'>
-          <div class='problem'>
-            <Link to={`/problem/${item.title}`}>
+          <div className='problem'>
+            <Link to={`/${item.title}`}>
               <h2 className='title'>{item.title}</h2>
             </Link>
             <p className='summary'>{item.summary}</p>
@@ -30,6 +30,7 @@ export const Dashboard = ({ jsList }) => (
 );
 
 function mapStateToProps(state) {
+  console.log(state.js);
   return {
     jsList: state.js
   };

@@ -6,15 +6,15 @@ import './navigation.scss';
 const Navigation = () => (
   <div>
     <header className='article-nav'>
-      <Link to='/dashboard'>
+      <Link to='/'>
         <img className='nav-logo' src={'../src/app/icons/logo5.png'} />
       </Link>
       <ul className='nav'>
         <li className='nav-item'>
-          <Link to='/dashboard'>JS</Link>
+          <Link to='/js'>JS</Link>
         </li>
         <li className='nav-item'>
-          <Link to='/dashboard'>CSS</Link>
+          <Link to='/css'>CSS</Link>
         </li>
       </ul>
       <i className='nav-search material-icons'>search</i>

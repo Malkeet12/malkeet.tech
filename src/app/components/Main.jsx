@@ -12,17 +12,13 @@ export const Main = () => (
     <Provider store={store}>
       <div>
         <ConnectedNavigation />
+        <Route exact path='/' render={() => <ConnectedDashboard />}></Route>
         <Route
           exact
-          path='/dashboard'
-          render={() => <ConnectedDashboard />}
-        ></Route>
-        <Route
-          exact
-          path='/problem/:id'
+          path='/:id'
           render={({ match }) => <ConnectedProblemDetail match={match} />}
         ></Route>
-        <Route exact path={'*'} render={() => <ConnectedDashboard />} />
+        {/* <Route exact path={'*'} render={() => <ConnectedDashboard />} /> */}
       </div>
     </Provider>
   </Router>
