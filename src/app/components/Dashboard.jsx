@@ -8,7 +8,7 @@ export const Dashboard = ({ jsList }) => (
       <div key={index}>
         <div className='wrapper'>
           <div className='problem'>
-            <Link to={`/${item.title}`}>
+            <Link to={`/${item.id}`}>
               <h2 className='title'>{item.title}</h2>
             </Link>
             <p className='summary'>{item.summary}</p>

@@ -6,6 +6,7 @@ import { Router, Route } from 'react-router-dom';
 import { history } from '../store/history';
 import { ConnectedNavigation } from './Navigation';
 import { ConnectedProblemDetail } from './ProblemDetail';
+import './main.scss';
 
 export const Main = () => (
   <Router history={history}>
