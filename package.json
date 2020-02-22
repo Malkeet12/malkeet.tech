@@ -7,7 +7,7 @@
     "build": "webpack -p",
     "deploy": "npm run build && git commit -a -m deployment && git push heroku master",
     "dev": "webpack &&  webpack-dev-server --open nodemon",
-    "server-dev": "nodemon src/server --exec babel-node src/server",
+    "server-dev": "PORT=8081 nodemon src/server --exec babel-node src/server",
     "start-dev": "concurrently \"npm run server-dev\" \"npm run dev\"",
     "server-spec": "babel-node src/server/server.spec",
     "start": "webpack",

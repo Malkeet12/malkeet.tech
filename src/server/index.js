@@ -1,8 +1,8 @@
-const axios = require('axios');
-const cheerio = require('cheerio');
+const axios = require("axios");
+const cheerio = require("cheerio");
 
 const url =
-  'https://medium.com/javascript-in-plain-english/overriding-tostring-function-of-javascript-objects-dd3545ba6254';
+  "https://www.codementor.io/@dariogarciamoya/understanding--this--in-javascript-du1084lyn?icn=post-8i1jca6jp&ici=post-du1084lyn";
 axios
   .get(url)
   .then(function(response) {
@@ -17,11 +17,11 @@ axios
     // always executed
   });
 
-getData = html => {
-  let data = { content: '' };
+const getData = html => {
+  let data = { content: "" };
   const $ = cheerio.load(html);
-  $('p').each((index, elem) => {
-    data.content += $(elem).text() + '\n\n';
+  $("p").each((index, elem) => {
+    data.content += $(elem).text() + "\n\n";
   });
 
   return data;
